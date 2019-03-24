@@ -1,0 +1,18 @@
+{
+  "name": "rags-ssh",
+  "version": "0.1.0",
+  "author": "rags",
+  "summary": "My test ssh module",
+  "license": "Apache-2.0",
+  "source": "https://github.com/ragsvm/puppet-ssh2",
+  "project_page": "https://github.com/ragsvm/puppet-ssh2",
+  "issues_url": "https://github.com/ragsvm/puppet-ssh2/issues",
+  "dependencies": [
+    {
+      "name": "puppetlabs-stdlib",
+      "version_requirement": ">= 1.0.0"
+    }
+  ],
+  "data_provider": null
+}
+
