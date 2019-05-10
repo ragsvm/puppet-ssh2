@@ -1,6 +1,6 @@
 function ssh::data(){
   $base_params = {
-    'ssh::ensure'         => true,
+    'ssh::ensure'         => 'present',
     'ssh::service_enable' => true,
     'ssh::service_ensure' => 'running',
     
@@ -23,4 +23,6 @@ function ssh::data(){
        fail("${case['operatingsystem']} is not supported")
      }
   }
+
+  $base_params + $os_params
 }

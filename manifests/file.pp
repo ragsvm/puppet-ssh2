@@ -1,6 +1,6 @@
 class ssh::file
-( $permit_root_login = $::ssh::permit_root_login,
-  $sshd_port         = $::ssh::sshd_port,
+( Boolean $permit_root_login = $::ssh::permit_root_login,
+  Integer $sshd_port         = $::ssh::sshd_port,
 ){
   file {'/etc/ssh/sshd_config':
     
